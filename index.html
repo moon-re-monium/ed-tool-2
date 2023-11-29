@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入庫計算</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container mt-4">
+    <h2 class="mb-4">入庫計算</h2>
+    <form>
+        <div class="form-group">
+            <label for="stock">出庫枚数:</label>
+            <input type="number" class="form-control" id="stock" required>
+        </div>
+        <div class="form-group">
+            <label for="totalAmount">合計金額:</label>
+            <input type="number" class="form-control" id="totalAmount" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculate()">計算する</button>
+    </form>
+
+    <div id="result" class="mt-4"></div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
